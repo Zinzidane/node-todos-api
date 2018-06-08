@@ -295,7 +295,7 @@ describe('POST /users', () => {
       .post('/users')
       .send({email, password})
       .expect(400)
-      .expect(done);
+      .end(done);
   });
 });
 
